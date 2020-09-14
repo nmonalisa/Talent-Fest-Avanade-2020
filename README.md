@@ -2,7 +2,7 @@
 
 ### O QUE É FACE LOGIN?
 
-Face Login é uma aplicação que utiliza o serviço de Detecção Facial dos Serviços Cognitivos do Azure  (Microsoft) para realizar o reconhecimento facial a partir das imagens da câmera do dispositivo do usuário e permitir o seu login no sistema. Assim garantimos que ele tenha uma experiência de usuário ágil e agradável ao receber acesso a um ambiente virtual de forma segura e prática, sem a necessidade de digitação de senhas e e-mais!
+Face Login é uma aplicação para realização de logins baseado em reconhecimento facial a partir das imagens da câmera do dispositivo do usuário. Assim garantimos que ele tenha uma experiência de usuário ágil e agradável ao receber acesso a um ambiente virtual de forma segura e prática, sem a necessidade de digitação de senhas e e-mais!Para isso, usamos o serviço de Detecção Facial dos Serviços Cognitivos do Azure  (Microsoft).
 
 
 ### COMO FUNCIONA?
