@@ -1,65 +1,18 @@
-# Face Login
+## Face Login
 
-## Índice
+### O QUE É FACE LOGIN?
 
-- [1. Visão do Produto](#1-Visão-do-produto)
-- [2. Product Backlog](#2-Product-Backlog)
-- [3. Face API](#3-Face-API)
-- [4. Site](#4-Site)
-- [5. Base de personagens](#5-Base-de-personagens)
-
----
-
-## 1.  Visão do Produto
-Segurança é um problema cada vez maior hoje em dia e garanti-la em meios não digitais pode
-ser ainda mais complexo. E o processo de se identificar em eventos ou em pontos de acesso é sempre
-um processo muito chato e manual. Além disso, conta normalmente com muitas filas e quase sempre é
-assistido por dispositivos ou acessórios para garantir a identificação. Porém, para garantir melhor
-experiência para as pessoas é possível fazer sua identificação sem usuários ou senhas e dispositivos
-utilizando o reconhecimento facial.
-
-A expectativa com o desenvolvimento da aplicação é criar um site/app de identificação e
-cadastro utilizando a api de facial recognition da Microsoft
-
-## 2.  Product Backlog
-1 – Cadastro de rostos para reconhecimento
-2 – Reconhecimento facial
-3 – Site/App com câmera
-4 – Reconhecimento facial com foto do site/app
-5 – Cadastro de rostos via site/app
-6 – Base de personagens
-7 – Escolher personagens no cadastro
-8 – Exibir personagem no reconhecimento
+Face Login é uma aplicação que utiliza o serviço de Detecção Facial dos Serviços Cognitivos do Azure  (Microsoft) para realizar o reconhecimento facial a partir das imagens da câmera do dispositivo do usuário e permitir o seu login no sistema. Assim garantimos que ele tenha uma experiência de usuário ágil e agradável ao receber acesso a um ambiente virtual de forma segura e prática, sem a necessidade de digitação de senhas e e-mais!
 
 
-## 3.  Face API
-A api da Microsoft de reconhecimento facial é uma ótima ferramenta para a situação descrita e,
-portanto, é imprescindível o uso dela. Segue abaixo mais detalhes de como utilizá-la.
+### COMO FUNCIONA?
+A partir de uma imagem capturada pela câmera do dispositivo, a API detecta com precisão a região do rosto do usuário. Essa imagem é então comparada com imagens de rostos já registrados na plataforma. Utilizando algoritmos de inteligência artificial que são abstraídos pelos métodos do serviço, a API detecta com precisão diferentes atributos da face capturada na foto, como por exemplo idade, gênero, presença de pêlos, profundidade dos olhos e outros. A partir daí pode-se obter a probabilidade daquele rosto pertencer a um dos usuários já registrados do grupo. Se a probabilidade for maior do que um grau de confiança pré-estabelecido, assumimos que o potencial candidato é a mesma pessoa fotografa e o acesso do sistema é liberado para o usuário. 
 
-1 - Cadastro
-Para cadastrar um rosto é importante primeiro se assegurar que um grupo de pessoas está criado.
-Todos os rostos serão comparados dentro deste grupo. Após a criação de um grupo, é possível
-cadastrar os rostos daquela pessoa.
 
-2 -Verificação
-Para identificar a quem pertence determinado rosto é necessário que a imagem a ser comparada
-contra a lista de rostos tenha um faceId associado. Para isso é gerado um faceid para a foto que ao
-ser jogada contra o grupo volta os faceids de possíveis candidatos. Para ter o nome da pessoa
-associada ao faceid mais uma última chamada é feita com o faceid do candidato no grupo.
-
-## 4.  Site
-
-Para a criação de uma autenticação é necessário o desenvolvimento de um site ou app com câmera para
-que a foto seja tirada e enviada ao Face API para a identificação ou cadastro das pessoas.
-
-## 5.  Base de personagens
-
-Com a parte de cadastro e login finalizadas é possível fazer o cruzamento da pessoa com um
-personagem de sua escolha. O banco de dados deve conter as seguintes informações:
-* Nome
-* FaceId
-* Nome do personagem
-* Foto do personagem
-
-Ao enviar uma foto de uma pessoa para cadastro é necessária a escolha de um personagem
-(livre) e na identificação que apareça o nome e foto do personagem de sua escolha.
+### POTENCIAIS APLICAÇÕES
+* Controle de acesso em filas de eventos
+* Controle de acesso em portarias de condomínios
+* Controle de acesso ao sistema operacional de celulares e computadores
+* Substituição de cartões de ponto tradicionais em estabelecimentos de trabalho
+* Controle de autorizações bancárias
+* Outros!
