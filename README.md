@@ -16,3 +16,9 @@ A partir de uma imagem capturada pela câmera do dispositivo, a API detecta com 
 * Substituição de cartões de ponto tradicionais em estabelecimentos de trabalho
 * Controle de autorizações bancárias
 * Outros!
+
+
+### DEMONSTRAÇÃO
+Abaixo segue a demonstração do login. Nesse caso o usuário já está registrado. Caso ele ainda não possua registro basta clicar em "Registrar" e cadastrar sua foto!
+
+![demonstração](src/assets/demo_mona.gif)
