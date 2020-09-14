@@ -19,6 +19,6 @@ A partir de uma imagem capturada pela câmera do dispositivo, a API detecta com 
 
 
 ### DEMONSTRAÇÃO
-Abaixo segue a demonstração do login. Nesse caso o usuário já está registrado. Caso ele ainda não possua registro basta clicar em "Registrar" e cadastrar sua foto!
+Abaixo segue a demonstração do login. Nesse caso a usuária já está registrada. Caso você ainda não possua cadastro, basta clicar em "Registrar" e cadastrar sua foto!
 
 ![demonstração](src/assets/demo_mona.gif)
