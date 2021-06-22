@@ -1,4 +1,4 @@
-## Trabalho realizado durante o Hackaton Talento Fest
+## Trabalho realizado durante o Hackaton Talent Fest
 ### Face Login - Aplicativo de Reconhecimento Facial
 
 ### O QUE É FACE LOGIN?
